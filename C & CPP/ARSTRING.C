@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+char a[100];
+int i=0,c=0;
+clrscr();
+printf("enter number\n");
+scanf("%s",&a);
+/*	while(a[i]!='\0')
+	{
+	 i++;
+	 c++;
+	}
+*/
+for(i=0;a[i]!='\0';i++)
+c++;
+printf("%d\n->>%s\n",c,a);
+
+for(i=c;i>=0;i--)
+printf(" %c",a[i]);
+getch();}

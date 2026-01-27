@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int a[10],i;
+clrscr();
+printf("enter a number:");
+
+for(i=1;i<=10;i++)
+scanf("%d",&a[i]);
+for(i=1;i<=10;i++)
+printf("%d ",a[i]);
+
+	for(i=1;i<=10;i++)
+	{	if(a[i] %2==0)
+		{
+			 printf("\neven are %d ",a[i]);
+		}
+	}//even
+	for(i=1;i<=10;i++)
+	{
+		if(a[i] %2!=0)
+		{
+			printf("\nodd are %d ",a[i]);
+		}
+	}//odd
+getch();
+}

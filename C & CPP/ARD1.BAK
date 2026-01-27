@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int i,n;
+char a[100];
+clrscr();
+printf("enter string a[i]:\n");
+for(i=0;i<2;i++)
+scanf("%s",&a);
+
+for(i=0;a[i]='\0';i++)
+printf("\na[%d]=%s\n",i,a);
+getch();
+}

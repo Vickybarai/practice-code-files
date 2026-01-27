@@ -1,0 +1,35 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int i=0,j=0,ca=0,cb=0;
+char a[100],b[100];
+clrscr();
+
+printf("enter string a[i]:\n");
+scanf("%s",a);
+printf("enter string b[i]:\n");
+scanf("%s",b);
+
+	for(i=0;a[i]!='\0';i++)
+	ca++;
+
+	for(j=0;b[j]!='\0';j++)
+	cb++;
+
+	printf("\n a[i] cout = %d",ca);
+	printf("\n b[j] cout = %d",cb);
+
+	printf("\n\n\tafter adding\n");
+
+
+	for(j=0;j!=cb;j++)
+	{
+	a[i]=b[j];
+  //	j++;
+	i++;  }
+
+	printf("\n a[i] = %s",a[i]);
+
+getch();
+}

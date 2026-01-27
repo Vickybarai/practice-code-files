@@ -1,0 +1,31 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int a[100],i,j,n;
+clrscr();
+printf("enter limit:");
+scanf("%d",&n);
+
+for(i=0;i<n;i++)
+scanf("%d",&a[i]);
+
+
+	for(i=0;i<n;i++)
+	{
+		for(j=i+1;j<=n;j++)
+		{
+			if(a[j]==a[i])
+			{
+				printf("\n repeated number:%d ",a[i]);
+			}
+
+			if(a[j]!=a[i])
+			{
+				printf("\n unique number:%d ",a[i]);
+			}
+
+		}
+	}
+getch();
+	}

@@ -1,0 +1,15 @@
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+int a[10],i;
+clrscr();
+for(i=1;i<=10;i++)
+cin>>a[i];
+
+	if(a[i] %2==0)
+	{   cout<<"even are "<<a[i]; }
+	if(a[i] %2!=0)
+	{   cout<<"odd are "<<a[i];}
+getch();
+}

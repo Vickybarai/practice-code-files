@@ -1,0 +1,46 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int a[100],b[100],c[100],i,j=0,n,n1,temp=0;
+clrscr();
+
+printf("enter limite for a[] and b[]\n:");
+scanf("%d%d",&n,&n1);
+
+for(i=0;i<n;i++)
+{
+printf("enter a random number a[%d]: ",i);
+scanf("%d",&a[i]);
+c[j]=a[i];
+j++;
+}
+
+for(i=0;i<n1;i++)
+{
+printf("enter a random number b[%d]: ",i);
+scanf("%d",&b[i]);
+c[j]=b[i];
+j++;
+}
+//for(i=0;i<n+n1;i++)
+//printf("\nc[i]:%d",c[i]);
+
+	for(i=0;i<n+n1;i++)
+	{
+		for(j=i+1;j<n+n1;j++)
+		{
+				if(c[i]<c[j])
+				{
+				temp=c[i];
+				c[i]=c[j];
+				c[j]=temp;
+				}
+		}
+	}
+for(i=0;i<n+n1;i++)
+printf("\nc[%d]:%d",i,c[i]);
+printf("\nreverse:");
+for(i<n+n1;i>=0;i++)
+printf("\nc[%d]:%d",i,c[i]);
+getch();}

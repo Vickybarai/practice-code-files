@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int a[10],b[10],c[10],j,i;
+clrscr();
+
+printf("enter number for a\n:");
+for(i=0;i<5;i++)
+scanf("%d",&a[i]);
+printf("enter number for b\n:");
+for(i=0;i<5;i++)
+scanf("%d",&b[i]);
+
+	for(i=0;i<5;i++)
+	{
+	c[j]=a[i];
+	}
+	for(i=0;i<5;i++)
+	{
+	c[j]=j++,
+	b[i];
+	}
+
+	for(j=0;j<10;j++)
+	printf("\t%d ",c[j]);
+getch();
+}

@@ -1,0 +1,38 @@
+	  //program for DDA
+#include<iostream.h>
+#include<conio.h>
+#include<math.h>
+#include<graphics.h>
+void main()
+{
+int gd=DETECT,gm;
+int x1,y1,x2,y2;
+int dx , dy, length , k , xinc , yinc ,x,y;
+clrscr();
+initgraph(&gd,&gm,"C:\\TURBOC3\\BGI");
+
+cout<<"Enter the two left end pixel points (xa,ya):\n";
+cin>>x1>>y1;
+cout<<"Enter the two right end pixel points(xb,yb):\n";
+cin>>x2>>y2;
+dx=x2-x1;
+dy=y2-y1;
+if (abs(dx)>abs(dy))
+length=abs(dx);
+else
+length=abs(dy);
+xinc=dx/length;
+yinc=dy/length;
+x=x1;
+y=y1;
+for(k=1;k<=length;k++)
+{
+putpixel(ceil(x),ceil(y),6);
+x=x+xinc;
+y=y+yinc;
+}
+
+getch();
+
+
+}
