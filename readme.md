@@ -1,1 +1,1 @@
-py , pynb , c ,CPP code files 
+Practice repository for improving coding logic using C, C++, Data Structures, and Pandas programs.
